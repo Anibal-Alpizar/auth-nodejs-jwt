@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Api company products",
-    "dateExported": "2023-12-29T04:05:41.226Z",
+    "dateExported": "2023-12-29T23:50:49.800Z",
     "version": "1.1",
     "folders": [
         {
@@ -32,11 +32,25 @@
             "colId": "f8a1ea6f-c42d-49f2-b336-277923e997f2",
             "containerId": "2d92a2e1-9cd4-4a3c-8c28-f23e7a86df93",
             "name": "/products",
-            "url": "http://localhost:4000/products/",
+            "url": "http://localhost:4000/api/products/",
             "method": "GET",
             "sortNum": 10000,
             "created": "2023-12-29T04:00:20.862Z",
-            "modified": "2023-12-29T04:00:31.065Z",
+            "modified": "2023-12-29T23:49:48.174Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "76a5a518-b5cd-4255-b7ae-6abcaa5a638e",
+            "colId": "f8a1ea6f-c42d-49f2-b336-277923e997f2",
+            "containerId": "2d92a2e1-9cd4-4a3c-8c28-f23e7a86df93",
+            "name": "/products/id",
+            "url": "http://localhost:4000/api/products/658e43f634190a5ddfdd06bb",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2023-12-29T04:29:46.710Z",
+            "modified": "2023-12-29T23:50:37.761Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -46,16 +60,54 @@
             "colId": "f8a1ea6f-c42d-49f2-b336-277923e997f2",
             "containerId": "2d92a2e1-9cd4-4a3c-8c28-f23e7a86df93",
             "name": "/products",
-            "url": "http://localhost:4000/products/",
+            "url": "http://localhost:4000/api/products/",
             "method": "POST",
             "sortNum": 20000,
             "created": "2023-12-29T04:01:03.678Z",
-            "modified": "2023-12-29T04:01:31.402Z",
+            "modified": "2023-12-29T23:50:02.905Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
                 "raw": "{\n  \"name\": \"laptop razer\",\n  \"category\": \"laptops\",\n  \"price\" : 1000.999,\n  \"imgURL\": \"https://www.pcworld.com/wp-content/uploads/2023/04/Razer-Blade-15.jpg?resize=1024%2C768&quality=50&strip=all\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "256998b6-ac38-4081-84ad-477929b34b16",
+            "colId": "f8a1ea6f-c42d-49f2-b336-277923e997f2",
+            "containerId": "2d92a2e1-9cd4-4a3c-8c28-f23e7a86df93",
+            "name": "/products/:productsId",
+            "url": "http://localhost:4000/api/products/658e359b064d3a2c107140ef",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-12-29T04:45:45.127Z",
+            "modified": "2023-12-29T23:50:14.936Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"laptop lenovo thinkpad\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c2b15074-4e70-4071-b257-f969b5ecbd4f",
+            "colId": "f8a1ea6f-c42d-49f2-b336-277923e997f2",
+            "containerId": "2d92a2e1-9cd4-4a3c-8c28-f23e7a86df93",
+            "name": "/products/:productsId",
+            "url": "http://localhost:4000/api/products/658e449b34190a5ddfdd06c1",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-12-29T04:52:15.097Z",
+            "modified": "2023-12-29T23:50:19.239Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"laptop lenovo thinkpad\"\n}",
                 "form": []
             },
             "tests": []
