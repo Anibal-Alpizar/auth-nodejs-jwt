@@ -14,11 +14,14 @@ export const createProduct = async (req, res) => {
 }
 
 export const getProducts = async (req, res) => {
-    const products = await Product.find()
-    res.status(200).json(products)
+    const product = await Product.find()
+    res.status(200).json(product)
 }
 
-export const getProductById = (req, res) => { }
+export const getProductById = async (req, res) => {
+    const product = await Product.findById(req.params.productId)
+    res.status(200).json(product)
+}
 
 export const updateProductById = (req, res) => { }
 
