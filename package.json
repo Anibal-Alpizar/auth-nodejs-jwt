@@ -1,16 +1,16 @@
 {
   "name": "products-api-jwt",
   "version": "1.0.0",
-  "description": "",
+  "description": "a simple api with jwt",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "build": "babel src --out-dir build",
-    "dev": "nodemon src/app.js",
+    "dev": "nodemon src/index.js",
     "start": "node build/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "anibal-alpizar",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
