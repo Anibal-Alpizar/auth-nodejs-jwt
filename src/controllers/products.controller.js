@@ -25,10 +25,12 @@ export const getProductById = async (req, res) => {
 
 export const updateProductById = async (req, res) => {
     const updatedProduct = await Product.findByIdAndUpdate(req.params.productId, req.body, {
-        new: true
+        new: true // <- to return the updated product
     })
     res.status(200).json(updatedProduct)
-
 }
 
-export const deleteProductById = (req, res) => { }
+export const deleteProductById = async (req, res) => {
+    const deletedProduct = await Product.findByIdAndDelete(req.params.productId)
+    res.status(204).json(deletedProduct)
+}
