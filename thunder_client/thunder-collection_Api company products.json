@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Api company products",
-    "dateExported": "2023-12-29T23:50:49.800Z",
+    "dateExported": "2023-12-29T23:55:41.670Z",
     "version": "1.1",
     "folders": [
         {
@@ -31,7 +31,7 @@
             "_id": "552955fc-aed6-4d7f-abce-8f8071bc1f19",
             "colId": "f8a1ea6f-c42d-49f2-b336-277923e997f2",
             "containerId": "2d92a2e1-9cd4-4a3c-8c28-f23e7a86df93",
-            "name": "/products",
+            "name": "/api/products",
             "url": "http://localhost:4000/api/products/",
             "method": "GET",
             "sortNum": 10000,
@@ -45,7 +45,7 @@
             "_id": "76a5a518-b5cd-4255-b7ae-6abcaa5a638e",
             "colId": "f8a1ea6f-c42d-49f2-b336-277923e997f2",
             "containerId": "2d92a2e1-9cd4-4a3c-8c28-f23e7a86df93",
-            "name": "/products/id",
+            "name": "/api/products/id",
             "url": "http://localhost:4000/api/products/658e43f634190a5ddfdd06bb",
             "method": "GET",
             "sortNum": 15000,
@@ -59,7 +59,7 @@
             "_id": "d8274b2b-338b-4cbf-be51-98682d49212b",
             "colId": "f8a1ea6f-c42d-49f2-b336-277923e997f2",
             "containerId": "2d92a2e1-9cd4-4a3c-8c28-f23e7a86df93",
-            "name": "/products",
+            "name": "/api/products",
             "url": "http://localhost:4000/api/products/",
             "method": "POST",
             "sortNum": 20000,
@@ -78,7 +78,7 @@
             "_id": "256998b6-ac38-4081-84ad-477929b34b16",
             "colId": "f8a1ea6f-c42d-49f2-b336-277923e997f2",
             "containerId": "2d92a2e1-9cd4-4a3c-8c28-f23e7a86df93",
-            "name": "/products/:productsId",
+            "name": "/api/products/:productsId",
             "url": "http://localhost:4000/api/products/658e359b064d3a2c107140ef",
             "method": "PUT",
             "sortNum": 30000,
@@ -97,7 +97,7 @@
             "_id": "c2b15074-4e70-4071-b257-f969b5ecbd4f",
             "colId": "f8a1ea6f-c42d-49f2-b336-277923e997f2",
             "containerId": "2d92a2e1-9cd4-4a3c-8c28-f23e7a86df93",
-            "name": "/products/:productsId",
+            "name": "/api/products/:productsId",
             "url": "http://localhost:4000/api/products/658e449b34190a5ddfdd06c1",
             "method": "DELETE",
             "sortNum": 40000,
@@ -111,6 +111,32 @@
                 "form": []
             },
             "tests": []
+        },
+        {
+            "_id": "c9a71f91-c3b7-4f5c-961c-8b89c7ab3cb0",
+            "colId": "f8a1ea6f-c42d-49f2-b336-277923e997f2",
+            "containerId": "554e96e3-310d-4a4d-afc2-7b9cb25e4000",
+            "name": "/api/auth/sinup",
+            "url": "http://localhost:4000/api/auth/signin",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-12-29T23:52:31.153Z",
+            "modified": "2023-12-29T23:54:43.490Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f2551630-fea8-46b2-bdd7-89a80f5156b7",
+            "colId": "f8a1ea6f-c42d-49f2-b336-277923e997f2",
+            "containerId": "554e96e3-310d-4a4d-afc2-7b9cb25e4000",
+            "name": "/api/auth/sinin",
+            "url": "",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-12-29T23:52:33.626Z",
+            "modified": "2023-12-29T23:52:33.626Z",
+            "headers": []
         }
     ]
 }
