@@ -1,0 +1,64 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Api company products",
+    "dateExported": "2023-12-29T04:05:41.226Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "2d92a2e1-9cd4-4a3c-8c28-f23e7a86df93",
+            "name": "products",
+            "containerId": "",
+            "created": "2023-12-29T04:02:40.354Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "de45df00-e542-4434-a509-fe09170cf23b",
+            "name": "users",
+            "containerId": "",
+            "created": "2023-12-29T04:05:12.973Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "554e96e3-310d-4a4d-afc2-7b9cb25e4000",
+            "name": "auth",
+            "containerId": "",
+            "created": "2023-12-29T04:05:19.381Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "552955fc-aed6-4d7f-abce-8f8071bc1f19",
+            "colId": "f8a1ea6f-c42d-49f2-b336-277923e997f2",
+            "containerId": "2d92a2e1-9cd4-4a3c-8c28-f23e7a86df93",
+            "name": "/products",
+            "url": "http://localhost:4000/products/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-12-29T04:00:20.862Z",
+            "modified": "2023-12-29T04:00:31.065Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d8274b2b-338b-4cbf-be51-98682d49212b",
+            "colId": "f8a1ea6f-c42d-49f2-b336-277923e997f2",
+            "containerId": "2d92a2e1-9cd4-4a3c-8c28-f23e7a86df93",
+            "name": "/products",
+            "url": "http://localhost:4000/products/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-12-29T04:01:03.678Z",
+            "modified": "2023-12-29T04:01:31.402Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"laptop razer\",\n  \"category\": \"laptops\",\n  \"price\" : 1000.999,\n  \"imgURL\": \"https://www.pcworld.com/wp-content/uploads/2023/04/Razer-Blade-15.jpg?resize=1024%2C768&quality=50&strip=all\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
