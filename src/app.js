@@ -3,10 +3,12 @@ import morgan from 'morgan'
 import productsRoutes from './routes/products.routes.js'
 import authRoutes from './routes/auth.routes.js'
 import { readFileSync } from 'fs'
+import { createRoles } from './libs/initialSetup.js'
 
 const pkg = JSON.parse(readFileSync('package.json', 'utf8'))
 
 const app = express()
+createRoles() // <- create roles in database
 
 app.set('pkg', pkg)
 
