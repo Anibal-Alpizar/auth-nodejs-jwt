@@ -1,2 +1,2 @@
-import { verifyToken } from './authJwt.middleware.js'
-export { verifyToken } 
+import * as authJwt from './authJwt.middleware.js'
+export { authJwt } 
