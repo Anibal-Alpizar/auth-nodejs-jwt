@@ -1,2 +1,3 @@
 import * as authJwt from './authJwt.middleware.js'
-export { authJwt } 
+import * as verifySignup from './verifySignup.middleware.js'
+export { authJwt, verifySignup }
