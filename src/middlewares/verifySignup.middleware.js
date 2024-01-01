@@ -1,5 +1,15 @@
-// verify that the roles in the request are valid or not
 import { ROLES } from '../models/Role.js'
+import User from '../models/User.js'
+
+export const checkDuplicateUsernameOrEmail = async (req, res, next) => {
+    const user = User.findOne({ userName: req.body.userName }) // <- find user by username
+    if (user) return res.status(400).json({ message: 'The user already exists' })
+
+    const email = User.findOne({ email: req.body.email }) // <- find user by email
+    if (email) return res.status(400).json({ message: 'The email already exists' })
+
+    next()
+}
 
 export const checkRolesExisted = (req, res, next) => {
     if (req.body.roles) {
